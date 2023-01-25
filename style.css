@@ -6,3 +6,31 @@ h1{
   font-size: 30px;
   font-family: Bookman, Palatino;  
 }
+.topnav {
+  overflow: hidden;
+  background-color: #ebebeb;
+  border-radius: 20px;
+
+  margin-right: 20px;
+
+}
+
+.topnav a {
+  float: left;
+  color: rgb(116, 139, 180);
+  text-align: center;
+  padding: 14px 16px;
+
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #5e5e5e;
+}
+
+.topnav a.active {
+  background-color: #b64375;
+  color: white;
+}
