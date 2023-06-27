@@ -12,44 +12,69 @@
 	
     <main>
 		<!--Navigation Bar-->
-		<div>
-			<nav>
-				<navitem style="float:left"><a href="#home">Sabrina Fogel</a></navitem>
-				<navitem><a href="#contact">Contact</a></navitem>
-				<navitem><a href="#projects">Projects</a></navitem>
-				<navitem><a href="#skills">Skills</a></navitem>
-				<navitem><a href="#about">About</a></navitem>
-			</nav>
-		</div>	
+		<div id="navbar">
+			<a href="#home">Sabrina Fogel</a>
+			<a href="#about">About</a>
+			<a href="#skills">Skills</a>
+			<a href="#projects">Projects</a>
+			<a href="#contact">Contact</a>
+		</div>
+
+		<script>
+			window.onscroll = function() {myFunction()};
+			
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+			
+			function myFunction() {
+			  if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			  } else {
+				navbar.classList.remove("sticky");
+			  }
+			}
+		</script>
+		
 
 		<!--Landing Page-->
 		<div>
-
+			<a id="home"></a>
 		</div>
 
 		<!--Profile Pic and About Me-->
 		<div>
-
+			<a id="about"></a>
+			<img src="profileTemplate.jpg">
+			Here is my About Me
 		</div>
 
 		<!--Skills-->
 		<div>
-
+			<a id="skills"></a>
+			Here are my Skills
 		</div>
 
 		<!--Projects-->
 		<div>
-
+			<a id="projects"></a>
+			Here are my Projects
 		</div>
 
 		<!--Contact Me-->
 		<div>
-
+			<a id="contact"></a>
+			Contact Me!
 		</div>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor elementum neque sed eleifend. Mauris justo lacus, finibus et turpis sit amet, molestie faucibus orci. Fusce scelerisque non risus at condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus egestas enim a purus venenatis lacinia. Ut tincidunt urna at nunc blandit fringilla. Quisque elementum cursus massa eget suscipit. Donec sit amet egestas dolor.
 
-        <h1>Sabrina Fogel</h1>
+		Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc eu mi in ipsum ultricies scelerisque. Donec erat felis, elementum quis ultricies sit amet, imperdiet et ex. Mauris malesuada justo sed nulla viverra, quis porta est bibendum. Phasellus vitae fermentum nibh, non eleifend sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris at ipsum finibus, pretium massa id, placerat est. Ut eget eros gravida ligula congue dapibus ut eget nulla. Vestibulum ullamcorper scelerisque nibh at laoreet. Maecenas sit amet odio massa. Vivamus quis ligula ligula. Integer dignissim nibh non odio sodales tincidunt.
 		
-		<a id="projects">This is the News</a>
+		Nullam congue nec nulla eu aliquam. Praesent bibendum nisl non mi rutrum, id convallis metus dictum. Sed malesuada aliquet ligula. Aenean quis ultricies nunc. Duis ullamcorper elementum felis ut aliquet. Vestibulum sit amet venenatis enim. Praesent metus tellus, interdum et tincidunt eget, vehicula nec est. Nunc consequat finibus finibus.
+		
+		Nullam iaculis diam non justo laoreet elementum. Aenean aliquet lacinia consectetur. Nunc finibus tellus ac elementum lobortis. Integer laoreet tortor id facilisis pretium. Nunc elementum id purus ut mattis. Cras sagittis, neque ac vehicula placerat, dolor purus lacinia est, in tristique justo metus nec erat. Etiam pharetra sagittis venenatis.
+		
+		Suspendisse potenti. Praesent tempus mauris quis neque pharetra pretium. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam nec metus eget sem fermentum interdum in vel orci. Cras sollicitudin nisl a ante tincidunt vestibulum. Aliquam erat volutpat. Maecenas a dignissim nunc, at consequat eros. Mauris vitae semper nulla. Maecenas lacinia libero elit, in hendrerit nisl aliquam vel. Quisque consequat lectus dui, ut rhoncus tortor placerat vel. Curabitur quis velit a massa malesuada porttitor. Mauris bibendum, ligula non ultrices ultrices, ipsum quam posuere nisi, vel ultrices arcu odio a justo. Proin diam diam, convallis et mi et, varius finibus dolor.
+		
 	
     </main>
 	<script src="index.js"></script>
