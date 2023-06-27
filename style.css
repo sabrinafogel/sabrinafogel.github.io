@@ -7,4 +7,26 @@ h1{
   font-family: Bookman, Palatino;  
 }
 
+body {
+  font-family: Bookman, Palatino;
+}
+
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dddddd;
+}
+
+navitem {
+  float: right;
+}
+
+navitem a {
+  display: block;
+  padding: 8px;
+  
+}
+
 /* Color palette: 13385D, A3A3A3, 333333, 197878*/
